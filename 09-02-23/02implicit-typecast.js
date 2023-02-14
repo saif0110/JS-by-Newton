@@ -1,5 +1,5 @@
 var result = true + "hello";
-console.log(typeof result, result); // expected "truehello" [correct];
+console.log(typeof result, result); // expected string "truehello" [correct];
 //It will convert into string when we use +
 
 var result = 23 * "hello";
