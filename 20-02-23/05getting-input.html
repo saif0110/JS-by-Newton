@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            box-sizing: border-box;
+            margin: 10px;
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 17px;
+            padding-top: 49px;
+        }
+    </style>
+</head>
+<body>
+    title: <input type="text" id="title"><br><br>
+    color: <input type="text" id="bgColor"><br><br>
+    <button onclick="onSubmit()">Click me</button>
+    <div id="box"></div>
+    <script>
+        function onSubmit(){
+            var title = document.getElementById("title").value;
+            var bgColor = document.getElementById("bgColor").value;
+            document.getElementById("box").innerHTML = title;
+            document.getElementById("box").style.backgroundColor = bgColor;
+        }
+    </script>
+</body>
+</html>

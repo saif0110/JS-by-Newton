@@ -1,0 +1,5 @@
+var list=[45,55,11,12,44,31];
+console.log(list);
+//reverse the array
+list.reverse();
+console.log(list);

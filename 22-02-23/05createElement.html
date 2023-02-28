@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #demo{
+            color: red;
+        }
+    </style>
+<body>
+    <div id="demo">
+
+    </div>
+    <script>
+        //craeting element <p></p> like this
+        var element = document.createElement('p');  //<p></p>
+        //creating text to append inside p tag
+        var txt = document.createTextNode("Hello! Tauheed Khan"); //Hello Tauheed Khan
+        // appending text inside p tag
+        element.appendChild(txt);
+        //now wwe have <p>Hello! Tauheed Khan</p>
+        //now appending whole p tag into div tag
+        var div = document.getElementById("demo");
+        div.appendChild(element);
+    </script>
+</body>
+</html>
